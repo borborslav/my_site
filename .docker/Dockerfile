@@ -1,9 +1,9 @@
 FROM node:latest
 
 RUN mkdir -p /site/app
-WORKDIR /aws
+WORKDIR /site
 
-COPY package.json /aws
+COPY package.json /site
 COPY app /site/app
 
 RUN npm install --omit=dev
