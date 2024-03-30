@@ -17,7 +17,7 @@ jobs:
           key: ${{secrets.SSH_PRIVATE_KEY}}
           inventory: |
             [all]
-            ${{vars.DOMAIN}} ansible_ssh_port=2222 address=localhost
+            ${{secrets.DOMAIN}} ansible_ssh_port=2222 address=localhost
           options: |
             -e GITHUB_REPO=${{github.repository}}
             -e NODE_ENV=${{vars.NODE_ENV}}
