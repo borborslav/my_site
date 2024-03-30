@@ -1,0 +1,35 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Node.js app CI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "dev": "nodemon app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borborslav/my_site.git"
+  },
+  "keywords": [
+    "linux",
+    "ci",
+    "cd",
+    "node",
+    "express",
+    "docker",
+    "ansible"
+  ],
+  "author": "Borys Borukh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/borborslav/my_site/issues"
+  },
+  "homepage": "https://github.com/borborslav/my_site#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
